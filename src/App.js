@@ -6,20 +6,24 @@ import Resume from './components/Resume';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import {XProvider} from './context/XContext';
 
 import './App.css';
 
 function App() {
+  const x = {x: 'X is here!'}
   return (
     <React.Fragment>
-      <CssBaseline />
-      <Navbar />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/resume' component={Resume} />
-        <Route exact path='/portfolio' component={Portfolio} />
-        <Route exact path='/contact' component={Contact} />
-      </Switch>
+      <XProvider value={x}>
+        <CssBaseline />
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/contact' component={Contact} />
+        </Switch>
+      </XProvider>
     </React.Fragment>
   );
 }

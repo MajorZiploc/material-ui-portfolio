@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { join } from 'path';
+import XContext from '../context/XContext';
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -155,6 +156,7 @@ const WorkExpEntry = ({ job }) => {
 const Resume = () => {
   const classes = useStyles();
   const [resumeData, setResumeData] = React.useState();
+  const x = React.useContext(XContext);
 
   React.useEffect(() => {
     (async () => {
@@ -172,7 +174,7 @@ const Resume = () => {
   return (
     <Box component='header' className={classes.mainContainer}>
       <Typography variant='h4' align='center' className={classes.heading}>
-        Working Experience
+        Working Experience {x.x}
       </Typography>
 
       <Box component='div' className={classes.timeLine}>
