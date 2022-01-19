@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 
 import Send from '@material-ui/icons/Send';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(_theme => ({
   contactContainer: {
     background: '#233',
     height: '100vh',

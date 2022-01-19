@@ -17,7 +17,7 @@ import project4 from '../images/mern-stack.jpg';
 import project5 from '../images/react-redux.jpg';
 import project6 from '../images/react.png';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(_theme => ({
   mainContainer: {
     background: '#233',
     height: '100%',
