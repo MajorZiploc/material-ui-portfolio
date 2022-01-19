@@ -7,6 +7,8 @@ import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import { ErrorBoundary } from 'react-error-boundary';
+import { DataProvider } from './context/DataContext';
+import { data } from './data';
 
 import './App.css';
 
@@ -30,13 +32,15 @@ function App() {
         }}
       >
         <CssBaseline />
-        <Navbar />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/resume' component={Resume} />
-          <Route exact path='/portfolio' component={Portfolio} />
-          <Route exact path='/contact' component={Contact} />
-        </Switch>
+        <DataProvider value={data}>
+          <Navbar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/resume' component={Resume} />
+            <Route exact path='/portfolio' component={Portfolio} />
+            <Route exact path='/contact' component={Contact} />
+          </Switch>
+        </DataProvider>
       </ErrorBoundary>
     </React.Fragment>
   );

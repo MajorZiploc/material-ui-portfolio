@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import { join } from 'path';
+import DataContext from '../context/DataContext';
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -149,19 +149,13 @@ const WorkExpEntry = ({ job }) => {
 const Resume = () => {
   const classes = useStyles();
   const [resumeData, setResumeData] = React.useState();
+  const data = React.useContext(DataContext);
 
   React.useEffect(() => {
     (async () => {
-      setResumeData(
-        await fetch(join(__dirname, 'resume_data.json'), {
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-          },
-        }).then(r => r.json())
-      );
+      setResumeData(await data.resumeData);
     })();
-  }, []);
+  }, [data.resumeData]);
 
   return (
     <Box component='header' className={classes.mainContainer}>
