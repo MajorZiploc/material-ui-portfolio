@@ -9,15 +9,51 @@ import Contact from './components/Contact';
 import { ErrorBoundary } from 'react-error-boundary';
 import { DataProvider } from './context/DataContext';
 import { data } from './data';
+import { makeStyles } from '@material-ui/core/styles';
 
 import './App.css';
 
+const useStyles = makeStyles(_theme => ({
+  errorContent: {
+    'position': 'relative',
+    'padding': '1rem',
+    'margin': 'o auto',
+    '&:before': {
+      content: "''",
+      position: 'absolute',
+      height: '100%',
+      border: '1px solid tan',
+      right: '40px',
+      top: 0,
+    },
+  },
+  errorHeading: {
+    color: 'tomato',
+    padding: '3rem 0',
+    textTransform: 'uppercase',
+    fontSize: 24,
+  },
+  errorSubHeading: {
+    color: '#fff',
+    padding: 0,
+    textTransform: 'uppercase',
+    fontSize: 22,
+    inlineSize: '400px',
+    overflowWrap: 'break-word',
+  },
+  errorButton: {
+    fontSize: 22,
+  },
+}));
+
+
 function ErrorFallback({ error, resetErrorBoundary }) {
+  const classes = useStyles();
   return (
-    <div role='alert'>
-      <p>Something went wrong:</p>
-      <pre>{error.message}</pre>
-      <button onClick={resetErrorBoundary}>Try again</button>
+    <div role='alert' className={`${classes.errorContent}`}>
+      <p className={classes.errorHeading}>Something went wrong:</p>
+      <p className={classes.errorSubHeading}>{error.message}</p>
+      <button onClick={resetErrorBoundary} className={classes.errorButton}>Try again</button>
     </div>
   );
 }
