@@ -2,9 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import Facebook from '@material-ui/icons/Facebook';
-import Twitter from '@material-ui/icons/Twitter';
-import Instagram from '@material-ui/icons/Instagram';
+import LinkedIn from '@material-ui/icons/LinkedIn';
+import DataContext from '../context/DataContext';
 
 const useStyles = makeStyles({
   bottomNavContainer: {
@@ -23,13 +22,21 @@ const useStyles = makeStyles({
 
 const Footer = () => {
   const classes = useStyles();
+  const [resumeData, setResumeData] = React.useState();
+  const data = React.useContext(DataContext);
 
-  return (
+  React.useEffect(() => {
+    (async () => {
+      setResumeData(await data.resumeData);
+    })();
+  }, [data.resumeData]);
+
+  return resumeData ? (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Facebook />} className={classes.root} />
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} />
-      <BottomNavigationAction icon={<Instagram />} className={classes.root} />
+      <BottomNavigationAction icon={<LinkedIn />} className={classes.root} href={resumeData.header.linkedIn} />
     </BottomNavigation>
+  ) : (
+    <></>
   );
 };
 export default Footer;

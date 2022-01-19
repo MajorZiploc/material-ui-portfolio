@@ -46,14 +46,15 @@ const useStyles = makeStyles(_theme => ({
   },
 }));
 
-
 function ErrorFallback({ error, resetErrorBoundary }) {
   const classes = useStyles();
   return (
     <div role='alert' className={`${classes.errorContent}`}>
       <p className={classes.errorHeading}>Something went wrong:</p>
       <p className={classes.errorSubHeading}>{error.message}</p>
-      <button onClick={resetErrorBoundary} className={classes.errorButton}>Try again</button>
+      <button onClick={resetErrorBoundary} className={classes.errorButton}>
+        Try again
+      </button>
     </div>
   );
 }
