@@ -17,6 +17,20 @@ import project4 from '../images/mern-stack.jpg';
 import project5 from '../images/react-redux.jpg';
 import project6 from '../images/react.png';
 
+import fsharpIconDark from '../images/fsharp_icon_dark.png';
+import typescriptIconBlue from '../images/typescript_icon_blue.png';
+import javascriptIconYellow from '../images/js_icon_yellow.png';
+import powershellIconBlue from '../images/powershell_icon_blue.png';
+import devIconDarkTransparent from '../images/developer_icon_dark_transparent.jpeg.png';
+
+const getImage = project =>
+  // prettier-ignore
+  project.mainLanguage.match(/(f#|fsharp)/i) ? fsharpIconDark
+  : project.mainLanguage.match(/(\bts\b|typescript)/i) ? typescriptIconBlue
+  : project.mainLanguage.match(/(\bjs\b|javascript)/i) ? javascriptIconYellow
+  : project.mainLanguage.match(/(\bps\b|powershell)/i) ? powershellIconBlue
+  : devIconDarkTransparent;
+
 const useStyles = makeStyles(_theme => ({
   mainContainer: {
     background: '#233',
