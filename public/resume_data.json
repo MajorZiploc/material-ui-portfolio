@@ -160,15 +160,54 @@
     "items": [
       {
         "title": "json-test-utility",
-        "description": "A wrapper over lodash to help test api's and much more (Available on npm) (typescript, appveyor)"
+        "description": "A wrapper over lodash to help test api's and much more",
+        "mainLanguage": "typescript",
+        "availableOn": "npm",
+        "notableTooling": [
+          {
+            "tool": "appveyor"
+          }
+        ]
       },
       {
         "title": "powershell_scaffolder",
-        "description": "A module to create new powershell modules (Available on psgallery) (powershell, github actions)"
+        "description": "A module to create new powershell modules",
+
+        "mainLanguage": "powershell",
+        "availableOn": "psgallery",
+        "notableTooling": [
+          {
+            "tool": "github actions"
+          }
+        ]
       },
       {
-        "title": "F# projects with contributions",
-        "description": "FSharpPlus, Acadian.FSharp, Acadian.Dapper.Fs, Acadian.Json.Fs (Available on nuget)"
+        "title": "FSharpPlus",
+        "description": "Added Nullable module and operators that operator under context",
+        "mainLanguage": "F#",
+        "availableOn": "nuget",
+        "notableTooling": []
+      },
+      {
+        "title": "Acadian.FSharp",
+        "description": "Added various helpers for Result, Option, Async and other utility functions",
+        "mainLanguage": "F#",
+        "availableOn": "nuget",
+        "notableTooling": []
+      },
+      {
+        "title": "Acadian.Dapper.Fs",
+        "description": "A F# wrapper for C#'s Dapper to convert Nullable data to the Option type",
+        "mainLanguage": "F#",
+        "availableOn": "nuget",
+        "notableTooling": []
+      },
+      {
+        "title": "Acadian.Json.Fs",
+        "description": "A F# wrapper for dealing with null and option conversions related to json and F# models",
+        "mainLanguage": "F#",
+        "availableOn": "nuget",
+        "notableTooling": []
       }
     ]
   },
