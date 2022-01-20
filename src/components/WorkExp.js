@@ -146,7 +146,7 @@ const WorkExpEntry = ({ job }) => {
   );
 };
 
-const Resume = () => {
+const WorkExp = () => {
   const classes = useStyles();
   const [resumeData, setResumeData] = React.useState();
   const data = React.useContext(DataContext);
@@ -170,4 +170,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default WorkExp;

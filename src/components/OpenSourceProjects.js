@@ -36,7 +36,7 @@ const useStyles = makeStyles(_theme => ({
   },
 }));
 
-const Portfolio = () => {
+const OpenSourceProjects = () => {
   const classes = useStyles();
   const data = React.useContext(DataContext);
   const [projectSection, setSectionProjects] = React.useState();
@@ -91,4 +91,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default OpenSourceProjects;
