@@ -134,9 +134,12 @@ const WorkExpEntry = ({ job }) => {
         <Typography variant='body1' align='center' className={classes.body1}>
           {job.company}
         </Typography>
-        <Typography variant='subtitle1' align='center' className={classes.subtitle1}>
-          {job.points?.map(point => point.text).join('. ')}
-        </Typography>
+        {job.points &&
+          job.points.map((point, i) => (
+            <Typography key={i} variant='subtitle1' align='center' className={classes.subtitle1}>
+              {point.text}
+            </Typography>
+          ))}
         <Typography variant='subtitle2' align='center' className={classes.subtitle2}>
           {job.timeDedicated}
           {job?.teamSize ? ` - Team size of ${job.teamSize}` : ''} - {job.location}
