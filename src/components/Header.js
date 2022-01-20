@@ -6,6 +6,7 @@ import Box from '@material-ui/core/Box';
 import Typed from 'react-typed';
 import { makeStyles } from '@material-ui/core/styles';
 import avatar from '../avatar.jpg';
+import DataContext from '../context/DataContext';
 
 const useStyles = makeStyles(theme => ({
   avatar: {
@@ -33,20 +34,34 @@ const useStyles = makeStyles(theme => ({
 
 const Header = () => {
   const classes = useStyles();
+  const data = React.useContext(DataContext);
+  const [resumeData, setResumeData] = React.useState();
 
-  return (
+  React.useEffect(() => {
+    (async () => {
+      setResumeData(await data.resumeData);
+    })();
+  }, [data]);
+
+  return resumeData ? (
     <Box className={classes.typedContainer}>
       <Grid container justify='center'>
-        <Avatar className={classes.avatar} src={avatar} alt='Manyu Lakhotia' />
+        <Avatar
+          className={classes.avatar}
+          src={avatar}
+          alt={`${resumeData.header.preferredName} ${resumeData.header.lastName}`}
+        />
       </Grid>
       <Typography className={classes.title} variant='h4'>
-        <Typed strings={['Manyu Lakhotia']} typeSpeed={40} />
+        <Typed strings={[`${resumeData.header.preferredName} ${resumeData.header.lastName}`]} typeSpeed={40} />
       </Typography>
 
       <Typography className={classes.subtitle} variant='h5'>
-        <Typed strings={['Backend Developer', 'Frontend Developer', 'Scripter']} typeSpeed={40} backSpeed={50} loop />
+        <Typed strings={resumeData.summary.roles} typeSpeed={40} backSpeed={50} loop />
       </Typography>
     </Box>
+  ) : (
+    <></>
   );
 };
 
