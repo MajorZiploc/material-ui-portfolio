@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import LinkedIn from '@material-ui/icons/LinkedIn';
+import Email from '@material-ui/icons/Email';
 import DataContext from '../context/DataContext';
 
 const useStyles = makeStyles({
@@ -34,6 +35,7 @@ const Footer = () => {
   return resumeData ? (
     <BottomNavigation className={classes.bottomNavContainer}>
       <BottomNavigationAction icon={<LinkedIn />} className={classes.root} href={resumeData.header.linkedIn} />
+      <BottomNavigationAction icon={<Email />} className={classes.root} href={`mailto:${resumeData.header.email}`} />
     </BottomNavigation>
   ) : (
     <></>
