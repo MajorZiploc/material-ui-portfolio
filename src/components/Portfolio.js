@@ -53,7 +53,7 @@ const Portfolio = () => {
         {projectSection.items.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
-              <CardActionArea>
+              <CardActionArea href={project.codeLink}>
                 <CardMedia component='img' alt={project.title} height='140' image={getImage(project)} />
                 <CardContent>
                   <Typography variant='h5' gutterBottom>
@@ -66,9 +66,7 @@ const Portfolio = () => {
                     {project.availableOn ? `Available on: ${project.availableOn}` : ''}
                   </Typography>
                   <Typography variant='body2' color='textSecondary'>
-                    {project.notableTooling.length === 0
-                      ? ''
-                      : `Notable tooling: ${project.notableTooling.map(t => t.tool).join(', ')}`}
+                    Notable tooling: {[project.mainLanguage].concat(project.notableTooling.map(t => t.tool)).join(', ')}
                   </Typography>
                   <Typography variant='body2' color='textSecondary'>
                     {project.role ? `Role: ${project.role}` : ''}
