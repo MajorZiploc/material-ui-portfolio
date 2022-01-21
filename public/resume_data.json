@@ -42,7 +42,7 @@
         "teamSize": "4-10",
         "workDateRanges": [
           {
-            "beginDate": "March 2020",
+            "beginDate": "03/01/2020",
             "endDate": "Present"
           }
         ],
@@ -67,8 +67,8 @@
         "teamSize": "3-6",
         "workDateRanges": [
           {
-            "beginDate": "June 2021",
-            "endDate": "August 2021"
+            "beginDate": "06/01/2021",
+            "endDate": "08/01/2021"
           }
         ],
         "company": "Cythereal",
@@ -88,8 +88,8 @@
         "teamSize": "20-25",
         "workDateRanges": [
           {
-            "beginDate": "Feb 2019",
-            "endDate": "Feb 2020"
+            "beginDate": "02/01/2019",
+            "endDate": "02/01/2020"
           }
         ],
         "company": "CGI",
@@ -106,8 +106,8 @@
         "timeDedicated": "Part time",
         "workDateRanges": [
           {
-            "beginDate": "May 2018",
-            "endDate": "Dec 2018"
+            "beginDate": "05/01/2018",
+            "endDate": "12/01/2018"
           }
         ],
         "company": "University Of Louisiana",
@@ -119,8 +119,8 @@
         "teamSize": "4-6",
         "workDateRanges": [
           {
-            "beginDate": "Jan 2017",
-            "endDate": "Apr 2018"
+            "beginDate": "01/01/2017",
+            "endDate": "04/01/2018"
           }
         ],
         "company": "Wetlands Research Center",
@@ -138,11 +138,11 @@
         "teamSize": "4-8",
         "workDateRanges": [
           {
-            "beginDate": "July 2011",
-            "endDate": "Dec 2017"
+            "beginDate": "07/01/2011",
+            "endDate": "12/01/2017"
           },
           {
-            "beginDate": "March 2020",
+            "beginDate": "03/01/2020",
             "endDate": "Present"
           }
         ],
