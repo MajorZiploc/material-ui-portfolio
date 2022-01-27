@@ -58,7 +58,7 @@ const OpenSourceProjects = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea href={project.codeLink}>
-                <CardMedia component='img' alt={project.title} height='140' image={getImage(project)} />
+                <CardMedia component='img' alt={project.title} height='300' image={getImage(project)} />
                 <CardContent>
                   <Typography variant='h5' gutterBottom>
                     {project.title}
