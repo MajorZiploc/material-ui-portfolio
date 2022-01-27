@@ -35,7 +35,7 @@ const useStyles = makeStyles(_theme => ({
     height: '100%',
   },
   cardContainer: {
-    maxWidth: 345,
+    maxWidth: 360,
     margin: '3rem auto',
   },
 }));
@@ -43,18 +43,18 @@ const useStyles = makeStyles(_theme => ({
 const OpenSourceProjects = () => {
   const classes = useStyles();
   const data = React.useContext(DataContext);
-  const [projectSection, setSectionProjects] = React.useState();
+  const [resumeData, setResumeData] = React.useState();
 
   React.useEffect(() => {
     (async () => {
-      setSectionProjects((await data.resumeData).openSourceProjects);
+      setResumeData((await data.resumeData));
     })();
   });
 
-  return projectSection ? (
+  return resumeData ? (
     <Box component='div' className={classes.mainContainer}>
       <Grid container justify='center'>
-        {projectSection.items.map((project, i) => (
+        {resumeData.openSourceProjects.items.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea href={project.codeLink}>
