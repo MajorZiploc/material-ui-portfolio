@@ -97,6 +97,14 @@ const Navbar = () => {
           </ListItem>
         ))}
       </List>
+      <Divider />
+      {resumeData && (
+        <Button variant='h5' className={classes.codeWars}>
+          <a className={classes.alink} href={resumeData.header.codeWars}>
+            Find me on Code Wars
+          </a>
+        </Button>
+      )}
     </Box>
   );
 
@@ -111,13 +119,6 @@ const Navbar = () => {
             <Typography variant='h5' className={classes.title}>
               Portfolio
             </Typography>
-            {resumeData && (
-              <Button variant='h5' className={classes.codeWars}>
-                <a className={classes.alink} href={resumeData.header.codeWars}>
-                  Code Wars
-                </a>
-              </Button>
-            )}
           </Toolbar>
         </AppBar>
       </Box>
