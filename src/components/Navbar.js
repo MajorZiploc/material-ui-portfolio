@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
@@ -9,16 +9,18 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
-import ArrowBack from '@material-ui/icons/ArrowBack';
+import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from '@material-ui/icons/AssignmentInd';
 import Home from '@material-ui/icons/Home';
 import Apps from '@material-ui/icons/Apps';
 // import ContactMail from '@material-ui/icons/ContactMail';
 import { makeStyles } from '@material-ui/core/styles';
 import avatar from '../avatar.jpg';
+import DataContext from '../context/DataContext';
 
 import Footer from '../components/Footer';
 
@@ -27,11 +29,18 @@ const useStyles = makeStyles(theme => ({
     background: '#222',
     margin: 0,
   },
-  arrow: {
+  hamburger: {
     color: 'tomato',
   },
   title: {
     color: 'tan',
+    paddingRight: 50,
+  },
+  codeWars: {
+    color: 'tan',
+  },
+  alink: {
+    color: 'inherit',
   },
   menuSliderContainer: {
     width: 250,
@@ -57,7 +66,15 @@ const menuItems = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [resumeData, setResumeData] = React.useState();
+  const data = React.useContext(DataContext);
+
+  React.useEffect(() => {
+    (async () => {
+      setResumeData(await data.resumeData);
+    })();
+  });
 
   const classes = useStyles();
 
@@ -89,11 +106,18 @@ const Navbar = () => {
         <AppBar position='static' className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.arrow} />
+              <MenuIcon className={classes.hamburger} />
             </IconButton>
             <Typography variant='h5' className={classes.title}>
               Portfolio
             </Typography>
+            {resumeData && (
+              <Button variant='h5' className={classes.codeWars}>
+                <a className={classes.alink} href={resumeData.header.codeWars}>
+                  Code Wars
+                </a>
+              </Button>
+            )}
           </Toolbar>
         </AppBar>
       </Box>

@@ -6,11 +6,20 @@
     "phoneNumber": "+1(337)322-4192",
     "email": "LakeMonYew@gmail.com",
     "linkedIn": "https://www.linkedin.com/in/abhimanyu-lakhotia-659714160/",
-    "github": "https://github.com/MajorZiploc"
+    "github": "https://github.com/MajorZiploc",
+    "codeWars": "https://www.codewars.com/users/Major_Ziploc"
   },
   "summary": {
     "description": "Software Developer with 4+ years of work experience in developing web applications, documenting, stand alone applications, cicd, and databases 2+ years of personal experience in scripting, web scraping, data analytics, and data cleaning.",
-    "roles": ["Backend Developer", "Scripter", "Frontend Developer", "Quality Engineer", "Sys Admin", "Web Scraper", "Mentor"]
+    "roles": [
+      "Backend Developer",
+      "Scripter",
+      "Frontend Developer",
+      "Quality Engineer",
+      "Sys Admin",
+      "Web Scraper",
+      "Mentor"
+    ]
   },
   "technicalSkills": {
     "sectionHeader": "Technical Skills",
@@ -21,7 +30,7 @@
       },
       {
         "title": "Backend/Headless/Testing",
-        "description": "F# Giraffe, cypress.io, pandas, protractor, bats, pester, webscraper.io, django"
+        "description": "F# Giraffe, cypress.io, pandas, protractor, bats, pester, webscraper.io, tampermonkey, django"
       },
       {
         "title": "Languages",
@@ -228,6 +237,42 @@
         "link": "https://www.nuget.org/packages/Acadian.Json.Fs/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.Json.Fs",
         "notableTooling": [],
+        "role": "owner"
+      },
+      {
+        "title": "home-settings",
+        "description": "A cross platform developer machine harness",
+        "mainLanguage": "Shell",
+        "codeLink": "https://github.com/MajorZiploc/home-settings",
+        "notableTooling": [
+          {
+            "tool": "docker"
+          }
+        ],
+        "role": "owner"
+      },
+      {
+        "title": "web_scraper_io_scripts",
+        "description": "A web scrapping harness that makes use of webscraper.io",
+        "mainLanguage": "javascript",
+        "codeLink": "https://github.com/MajorZiploc/web_scraper_io_scripts",
+        "notableTooling": [
+          {
+            "tool": "docker"
+          }
+        ],
+        "role": "owner"
+      },
+      {
+        "title": "google.app.suite.scripts",
+        "description": "A way to manage multiple google scripts with standard coding tools",
+        "mainLanguage": "javascript",
+        "codeLink": "https://github.com/MajorZiploc/google.app.suite.scripts",
+        "notableTooling": [
+          {
+            "tool": "clasp"
+          }
+        ],
         "role": "owner"
       }
     ]

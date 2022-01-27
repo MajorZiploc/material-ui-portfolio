@@ -15,6 +15,7 @@ import fsharpIconDark from '../images/fsharp_icon_dark.png';
 import typescriptIconBlue from '../images/typescript_icon_blue.png';
 import javascriptIconYellow from '../images/js_icon_yellow.png';
 import powershellIconBlue from '../images/powershell_icon_blue.png';
+import shellDarkTransparent from '../images/shell_dark_transparent.png';
 import devIconDarkTransparent from '../images/developer_icon_dark_transparent.jpeg';
 
 const getImage = project =>
@@ -23,6 +24,7 @@ const getImage = project =>
   : project.mainLanguage.match(/(\bts\b|typescript)/i) ? typescriptIconBlue
   : project.mainLanguage.match(/(\bjs\b|javascript)/i) ? javascriptIconYellow
   : project.mainLanguage.match(/(\bps\b|powershell)/i) ? powershellIconBlue
+  : project.mainLanguage.match(/(\bsh\b|shell)/i) ? shellDarkTransparent
   : devIconDarkTransparent;
 
 const useStyles = makeStyles(_theme => ({
@@ -77,9 +79,11 @@ const OpenSourceProjects = () => {
                 <Button size='small' color='primary' href={project.codeLink}>
                   View Code
                 </Button>
-                <Button size='small' color='primary' href={project.link}>
-                  More
-                </Button>
+                {project.link && (
+                  <Button size='small' color='primary' href={project.link}>
+                    More
+                  </Button>
+                )}
               </CardActions>
             </Card>
           </Grid>
