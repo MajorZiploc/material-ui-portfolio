@@ -15,7 +15,8 @@ import fsharpIconDark from '../images/fsharp_icon_dark.png';
 import typescriptIconBlue from '../images/typescript_icon_blue.png';
 import javascriptIconYellow from '../images/js_icon_yellow.png';
 import powershellIconBlue from '../images/powershell_icon_blue.png';
-import shellDarkTransparent from '../images/shell_dark_transparent.png';
+import shellIconDarkTransparent from '../images/shell_icon_dark_transparent.png';
+import pythonIconLight from '../images/python_icon_light.webp';
 import devIconDarkTransparent from '../images/developer_icon_dark_transparent.jpeg';
 
 const getImage = project =>
@@ -24,7 +25,8 @@ const getImage = project =>
   : project.mainLanguage.match(/(\bts\b|typescript)/i) ? typescriptIconBlue
   : project.mainLanguage.match(/(\bjs\b|javascript)/i) ? javascriptIconYellow
   : project.mainLanguage.match(/(\bps\b|powershell)/i) ? powershellIconBlue
-  : project.mainLanguage.match(/(\bsh\b|shell)/i) ? shellDarkTransparent
+  : project.mainLanguage.match(/(\bpy\b|python)/i) ? pythonIconLight
+  : project.mainLanguage.match(/(\bsh\b|shell)/i) ? shellIconDarkTransparent
   : devIconDarkTransparent;
 
 const useStyles = makeStyles(_theme => ({
@@ -33,7 +35,7 @@ const useStyles = makeStyles(_theme => ({
     height: '100%',
   },
   cardContainer: {
-    maxWidth: 345,
+    maxWidth: 360,
     margin: '3rem auto',
   },
 }));
@@ -41,22 +43,22 @@ const useStyles = makeStyles(_theme => ({
 const OpenSourceProjects = () => {
   const classes = useStyles();
   const data = React.useContext(DataContext);
-  const [projectSection, setSectionProjects] = React.useState();
+  const [resumeData, setResumeData] = React.useState();
 
   React.useEffect(() => {
     (async () => {
-      setSectionProjects((await data.resumeData).openSourceProjects);
+      setResumeData((await data.resumeData));
     })();
   });
 
-  return projectSection ? (
+  return resumeData ? (
     <Box component='div' className={classes.mainContainer}>
       <Grid container justify='center'>
-        {projectSection.items.map((project, i) => (
+        {resumeData.openSourceProjects.items.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea href={project.codeLink}>
-                <CardMedia component='img' alt={project.title} height='140' image={getImage(project)} />
+                <CardMedia component='img' alt={project.title} height='300' image={getImage(project)} />
                 <CardContent>
                   <Typography variant='h5' gutterBottom>
                     {project.title}

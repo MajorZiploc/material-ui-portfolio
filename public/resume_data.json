@@ -10,7 +10,7 @@
     "codeWars": "https://www.codewars.com/users/Major_Ziploc"
   },
   "summary": {
-    "description": "Software Developer with 4+ years of work experience in developing web applications, documenting, stand alone applications, cicd, and databases 2+ years of personal experience in scripting, web scraping, data analytics, and data cleaning.",
+    "description": "Software Developer with 4+ years of work experience in developing web applications, documenting, stand alone applications, cicd, and databases; 2+ years of personal experience in scripting, web scraping, data analytics, and data cleaning.",
     "roles": [
       "Backend Developer",
       "Scripter",
@@ -242,7 +242,7 @@
       {
         "title": "home-settings",
         "description": "A cross platform developer machine harness",
-        "mainLanguage": "Shell",
+        "mainLanguage": "shell",
         "codeLink": "https://github.com/MajorZiploc/home-settings",
         "notableTooling": [
           {
@@ -271,6 +271,21 @@
         "notableTooling": [
           {
             "tool": "clasp"
+          }
+        ],
+        "role": "owner"
+      },
+      {
+        "title": "pandas_data_analytics",
+        "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
+        "mainLanguage": "python",
+        "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
+        "notableTooling": [
+          {
+            "tool": "docker"
+          },
+          {
+            "tool": "pandas"
           }
         ],
         "role": "owner"
