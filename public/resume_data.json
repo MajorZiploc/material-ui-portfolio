@@ -274,6 +274,21 @@
           }
         ],
         "role": "owner"
+      },
+      {
+        "title": "pandas_data_analytics",
+        "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
+        "mainLanguage": "python",
+        "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
+        "notableTooling": [
+          {
+            "tool": "docker"
+          },
+          {
+            "tool": "pandas"
+          }
+        ],
+        "role": "owner"
       }
     ]
   },
