@@ -262,6 +262,18 @@
           }
         ],
         "role": "owner"
+      },
+      {
+        "title": "google.app.suite.scripts",
+        "description": "A way to manage multiple google scripts with standard coding tools",
+        "mainLanguage": "javascript",
+        "codeLink": "https://github.com/MajorZiploc/google.app.suite.scripts",
+        "notableTooling": [
+          {
+            "tool": "clasp"
+          }
+        ],
+        "role": "owner"
       }
     ]
   },
