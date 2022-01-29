@@ -182,7 +182,7 @@
             "tool": "appveyor"
           }
         ],
-        "role": "owner"
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "powershell_scaffolder",
@@ -197,7 +197,7 @@
             "tool": "github actions"
           }
         ],
-        "role": "owner"
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "FSharpPlus",
@@ -207,7 +207,7 @@
         "link": "https://fsprojects.github.io/FSharpPlus/",
         "codeLink": "https://github.com/fsprojects/FSharpPlus",
         "notableTooling": [],
-        "role": "contributor"
+        "roles": [{ "role": "minor contributor" }]
       },
       {
         "title": "Acadian.FSharp",
@@ -216,8 +216,8 @@
         "availableOn": "nuget",
         "link": "https://www.nuget.org/packages/Acadian.FSharp/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.FSharp",
-        "notableTooling": [],
-        "role": "owner"
+        "notableTooling": [{ "tool": "fake (fsharp make file)" }],
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "Acadian.Dapper.Fs",
@@ -226,8 +226,8 @@
         "availableOn": "nuget",
         "link": "https://www.nuget.org/packages/Acadian.Dapper.Fs/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.Dapper.Fs",
-        "notableTooling": [],
-        "role": "owner"
+        "notableTooling": [{ "tool": "fake (fsharp make file)" }],
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "Acadian.Json.Fs",
@@ -236,8 +236,8 @@
         "availableOn": "nuget",
         "link": "https://www.nuget.org/packages/Acadian.Json.Fs/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.Json.Fs",
-        "notableTooling": [],
-        "role": "owner"
+        "notableTooling": [{ "tool": "fake (fsharp make file)" }],
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "home-settings",
@@ -249,7 +249,7 @@
             "tool": "docker"
           }
         ],
-        "role": "owner"
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "web_scraper_io_scripts",
@@ -261,7 +261,7 @@
             "tool": "docker"
           }
         ],
-        "role": "owner"
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "google.app.suite.scripts",
@@ -273,7 +273,7 @@
             "tool": "clasp"
           }
         ],
-        "role": "owner"
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "title": "pandas_data_analytics",
@@ -288,7 +288,7 @@
             "tool": "pandas"
           }
         ],
-        "role": "owner"
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       }
     ]
   },

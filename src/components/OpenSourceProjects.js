@@ -47,7 +47,7 @@ const OpenSourceProjects = () => {
 
   React.useEffect(() => {
     (async () => {
-      setResumeData((await data.resumeData));
+      setResumeData(await data.resumeData);
     })();
   });
 
@@ -73,7 +73,7 @@ const OpenSourceProjects = () => {
                     Notable tooling: {[project.mainLanguage].concat(project.notableTooling.map(t => t.tool)).join(', ')}
                   </Typography>
                   <Typography variant='body2' color='textSecondary'>
-                    {project.role ? `Role: ${project.role}` : ''}
+                    {project.roles ? `Roles: ${project.roles.map(r => r.role).join(', ')}` : ''}
                   </Typography>
                 </CardContent>
               </CardActionArea>
