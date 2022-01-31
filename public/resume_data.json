@@ -10,7 +10,7 @@
     "codeWars": "https://www.codewars.com/users/Major_Ziploc"
   },
   "summary": {
-    "description": "Software Developer with 4+ years of work experience in developing web applications, documenting, stand alone applications, cicd, and databases; 2+ years of personal experience in scripting, web scraping, data analytics, and data cleaning.",
+    "description": "Software Developer with 3+ years of work experience in developing web applications, documenting, stand alone applications, cicd, and databases; along with personal experience in scripting, web scraping, data analytics, and data cleaning.",
     "roles": [
       "Backend Developer",
       "Scripter",
@@ -30,7 +30,7 @@
       },
       {
         "title": "Backend/Headless/Testing",
-        "description": "F# Giraffe, cypress.io, pandas, protractor, bats, pester, webscraper.io, tampermonkey, django"
+        "description": "F# Giraffe, google app suite scripts, cypress.io, pandas, webscraper.io, tampermonkey"
       },
       {
         "title": "Languages",
@@ -105,9 +105,9 @@
         "location": "Lafayette, LA",
         "points": [
           {
-            "text": "Wrote automated UI and API test suites with Protractor typescript for a health insurance website"
+            "text": "Wrote automated UI and API test suites a health insurance website"
           },
-          { "text": "Utilized tools like: typescript, postgresql, mongodb, vscode, and bash" }
+          { "text": "Utilized tools like: typescript, protractor, postgresql, mongodb, docker, vscode, and bash" }
         ]
       },
       {
@@ -247,6 +247,9 @@
         "notableTooling": [
           {
             "tool": "docker"
+          },
+          {
+            "tool": "bats"
           }
         ],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
