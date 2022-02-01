@@ -46,7 +46,7 @@
     "sectionHeader": "Experience",
     "jobs": [
       {
-        "title": "Software Developer/Technical Lead",
+        "title": "Software Developer -> Technical Lead",
         "timeDedicated": "Full time",
         "teamSize": "4-10",
         "workDateRanges": [
@@ -135,7 +135,7 @@
         "company": "Wetlands Research Center",
         "location": "Lafayette, LA",
         "points": [
-          { "text": "Developed a web project using asp.net mvc for network monitoring" },
+          { "text": "Developed a website using asp.net mvc for network monitoring" },
           {
             "text": "Developed a stand alone executable project using java swing for analyzing water levels from large NetCDF files"
           }
@@ -241,7 +241,7 @@
       },
       {
         "title": "home-settings",
-        "description": "A cross platform developer machine harness",
+        "description": "A cross platform developer machine harness for vim, nvim, zsh, bash, vscode, and tmux",
         "mainLanguage": "shell",
         "codeLink": "https://github.com/MajorZiploc/home-settings",
         "notableTooling": [
