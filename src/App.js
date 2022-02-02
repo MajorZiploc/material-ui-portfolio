@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Home from './components';
 import WorkExp from './components/WorkExp';
@@ -71,12 +71,12 @@ function App() {
         <CssBaseline />
         <DataProvider value={data}>
           <Navbar />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/workexp' component={WorkExp} />
-            <Route exact path='/opensource' component={OpenSourceProjects} />
-            <Route exact path='/contact' component={Contact} />
-          </Switch>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/workexp' element={<WorkExp />} />
+            <Route path='/opensource' element={<OpenSourceProjects />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
         </DataProvider>
       </ErrorBoundary>
     </React.Fragment>
