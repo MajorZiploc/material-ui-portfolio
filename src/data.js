@@ -1,4 +1,3 @@
-
 class Data {
   constructor() {
     this.resumeData = fetch(`${process.env.PUBLIC_URL}/resume_data.json`, {
