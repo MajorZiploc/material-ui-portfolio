@@ -38,6 +38,11 @@ const useStyles = makeStyles(_theme => ({
     maxWidth: 360,
     margin: '3rem auto',
   },
+  heading: {
+    color: 'tomato',
+    padding: '3rem 0',
+    textTransform: 'uppercase',
+  },
 }));
 
 const OpenSourceProjects = () => {
@@ -53,6 +58,9 @@ const OpenSourceProjects = () => {
 
   return resumeData ? (
     <Box component='div' className={classes.mainContainer}>
+      <Typography variant='h4' align='center' className={classes.heading}>
+        Open Source Projects
+      </Typography>
       <Grid container justify='center'>
         {resumeData.openSourceProjects.items.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
