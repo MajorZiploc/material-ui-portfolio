@@ -26,19 +26,46 @@
     "items": [
       {
         "title": "Frontend",
-        "description": "React, asp.net mvc, winforms"
+        "tools": [{ "tool": "React" }, { "tool": "asp.net mvc" }, { "tool": "winforms" }]
       },
       {
-        "title": "Backend/Headless/Testing",
-        "description": "F# Giraffe, google app suite scripts, cypress.io, pandas, webscraper.io, tampermonkey"
+        "title": "Backend",
+        "tools": [{ "tool": "F# Giraffe" }, { "tool": "google app suite scripts" }, { "tool": "pandas" }]
+      },
+      {
+        "title": "Testing",
+        "tools": [{ "tool": "cypress.io" }]
+      },
+      {
+        "title": "Headless",
+        "tools": [{ "tool": "webscraper.io" }, { "tool": "tampermonkey" }]
       },
       {
         "title": "Languages",
-        "description": "F#, C#, typescript, python, javascript, bash, powershell, rust, sql, mongodb, java"
+        "tools": [
+          { "tool": "F#" },
+          { "tool": "C#" },
+          { "tool": "typescript" },
+          { "tool": "python" },
+          { "tool": "javascript" },
+          { "tool": "bash" },
+          { "tool": "powershell" },
+          { "tool": "rust" },
+          { "tool": "sql" },
+          { "tool": "mongodb" },
+          { "tool": "java" }
+        ]
       },
       {
-        "title": "CICD",
-        "description": "Octopus Deploy, Teamcity, vmware, github actions, docker, ansible"
+        "title": "DevOps",
+        "tools": [
+          { "tool": "Octopus Deploy" },
+          { "tool": "Teamcity" },
+          { "tool": "docker" },
+          { "tool": "vmware" },
+          { "tool": "github actions" },
+          { "tool": "ansible" }
+        ]
       }
     ]
   },
