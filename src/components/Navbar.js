@@ -17,6 +17,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from '@material-ui/icons/AssignmentInd';
 import Home from '@material-ui/icons/Home';
 import Apps from '@material-ui/icons/Apps';
+import Build from '@material-ui/icons/Build';
 // import ContactMail from '@material-ui/icons/ContactMail';
 import { makeStyles } from '@material-ui/core/styles';
 import avatar from '../avatar.jpg';
@@ -62,6 +63,7 @@ const menuItems = [
   { listIcon: <Home />, listText: 'Home', listPath: '/' },
   { listIcon: <AssignmentInd />, listText: 'Work Experience', listPath: '/workexp' },
   { listIcon: <Apps />, listText: 'Open Source Projects', listPath: '/opensource' },
+  { listIcon: <Build />, listText: 'Technical Summary', listPath: '/techsummary' },
   // { listIcon: <ContactMail />, listText: 'Contact', listPath: '/contact' },
 ];
 
@@ -122,7 +124,7 @@ const Navbar = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor='right' onClose={() => setOpen(false)}>
+      <Drawer open={open} anchor='left' onClose={() => setOpen(false)}>
         {sideList()}
         <Footer />
       </Drawer>
