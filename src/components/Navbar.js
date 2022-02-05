@@ -122,7 +122,7 @@ const Navbar = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor='right' onClose={() => setOpen(false)}>
+      <Drawer open={open} anchor='left' onClose={() => setOpen(false)}>
         {sideList()}
         <Footer />
       </Drawer>
