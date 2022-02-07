@@ -40,6 +40,10 @@ const useStyles = makeStyles(theme => ({
   codeWars: {
     color: 'tan',
   },
+  downloadResumeLink: {
+    color: 'tan',
+    marginLeft: 15,
+  },
   alink: {
     color: 'inherit',
   },
@@ -107,6 +111,10 @@ const Navbar = () => {
           </a>
         </Button>
       )}
+      <Divider />
+      <Link to="/resume.pdf" target="_blank" className={`${classes.downloadResumeLink}`} download>Download Resume (pdf)</Link>
+      <br />
+      <Link to="/resume_data.json" target="_blank" className={`${classes.downloadResumeLink}`} download>Download Resume (json)</Link>
     </Box>
   );
 
