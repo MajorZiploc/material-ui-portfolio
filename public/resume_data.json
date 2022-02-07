@@ -5,7 +5,7 @@
     "preferredName": "Manyu",
     "phoneNumber": "+1(337)322-4192",
     "email": "LakeMonYew@gmail.com",
-    "portfolio": "https://www.majorziploc.com",
+    "portfolio": "https://portfolio.majorziploc.com",
     "linkedIn": "https://www.linkedin.com/in/abhimanyu-lakhotia-659714160/",
     "github": "https://github.com/MajorZiploc",
     "codeWars": "https://www.codewars.com/users/Major_Ziploc"
@@ -31,7 +31,7 @@
       },
       {
         "title": "Backend",
-        "tools": [{ "tool": "F# Giraffe" }, { "tool": "google app suite scripts" }, { "tool": "pandas" }]
+        "tools": [{ "tool": "F# Giraffe" }, { "tool": "google app suite scripts" }]
       },
       {
         "title": "Testing",
@@ -39,20 +39,20 @@
       },
       {
         "title": "Headless",
-        "tools": [{ "tool": "webscraper.io" }, { "tool": "tampermonkey" }]
+        "tools": [{ "tool": "pandas" }, { "tool": "webscraper.io" }, { "tool": "tampermonkey" }]
       },
       {
         "title": "Languages",
         "tools": [
           { "tool": "F#" },
-          { "tool": "C#" },
-          { "tool": "typescript" },
-          { "tool": "python" },
-          { "tool": "javascript" },
           { "tool": "bash" },
-          { "tool": "powershell" },
-          { "tool": "rust" },
+          { "tool": "typescript" },
+          { "tool": "javascript" },
+          { "tool": "python" },
           { "tool": "sql" },
+          { "tool": "powershell" },
+          { "tool": "C#" },
+          { "tool": "rust" },
           { "tool": "mongodb" },
           { "tool": "java" }
         ]
@@ -63,9 +63,9 @@
           { "tool": "Octopus Deploy" },
           { "tool": "Teamcity" },
           { "tool": "docker" },
-          { "tool": "vmware" },
+          { "tool": "ansible" },
           { "tool": "github actions" },
-          { "tool": "ansible" }
+          { "tool": "vmware" }
         ]
       }
     ]
