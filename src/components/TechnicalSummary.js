@@ -14,6 +14,8 @@ import testingCogClipboardLight from '../images/testing_cog_clipboard_light.png'
 import headlessPumpkinLight from '../images/headless_pumpkin_light.png';
 import codeBoxLight from '../images/code_box_light.png';
 import devOpsCogsLight from '../images/devops_cogs_light.png';
+import computerHammerWrenchLight from '../images/computer_hammer_wrench_light.png';
+import operatingSystemsLight from '../images/operating_systems_light.png';
 
 import devIconDarkTransparent from '../images/developer_icon_dark_transparent.jpeg';
 
@@ -25,6 +27,8 @@ const getImage = item =>
   : item.title.match(/(Headless)/i) ? headlessPumpkinLight
   : item.title.match(/(DevOps)/i) ? devOpsCogsLight
   : item.title.match(/(Languages)/i) ? codeBoxLight
+  : item.title.match(/(Operating Systems)/i) ? operatingSystemsLight
+  : item.title.match(/(Tooling)/i) ? computerHammerWrenchLight
   : devIconDarkTransparent;
 
 const useStyles = makeStyles(_theme => ({

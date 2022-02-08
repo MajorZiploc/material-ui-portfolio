@@ -35,7 +35,13 @@
       },
       {
         "title": "Testing",
-        "tools": [{ "tool": "cypress.io" }]
+        "tools": [
+          { "tool": "cypress.io" },
+          { "tool": "pester" },
+          { "tool": "bats" },
+          { "tool": "tape" },
+          { "tool": "expecto" }
+        ]
       },
       {
         "title": "Headless",
@@ -53,8 +59,7 @@
           { "tool": "powershell" },
           { "tool": "C#" },
           { "tool": "rust" },
-          { "tool": "mongodb" },
-          { "tool": "java" }
+          { "tool": "mongodb" }
         ]
       },
       {
@@ -66,6 +71,43 @@
           { "tool": "ansible" },
           { "tool": "github actions" },
           { "tool": "vmware" }
+        ]
+      },
+      {
+        "title": "Tooling",
+        "tools": [
+          {
+            "tool": "neovim"
+          },
+          {
+            "tool": "vscode"
+          },
+          {
+            "tool": "zsh"
+          },
+          {
+            "tool": "tmux"
+          },
+          {
+            "tool": "visual studio"
+          }
+        ]
+      },
+      {
+        "title": "Operating Systems",
+        "tools": [
+          {
+            "tool": "mac"
+          },
+          {
+            "tool": "ubuntu"
+          },
+          {
+            "tool": "wsl ubuntu"
+          },
+          {
+            "tool": "windows"
+          }
         ]
       }
     ]
