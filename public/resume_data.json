@@ -31,7 +31,7 @@
       },
       {
         "title": "Backend",
-        "tools": [{ "tool": "F# Giraffe" }, { "tool": "google app suite scripts" }]
+        "tools": [{ "tool": "F# Giraffe" }, { "tool": "google app suite scripts" }, { "tool": "django" }]
       },
       {
         "title": "Testing",
