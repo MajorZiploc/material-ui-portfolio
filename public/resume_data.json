@@ -70,6 +70,7 @@
           { "tool": "docker" },
           { "tool": "ansible" },
           { "tool": "github actions" },
+          { "tool": "aws" },
           { "tool": "vmware" }
         ]
       },
@@ -128,6 +129,7 @@
         "company": "Acadian Ambulance",
         "location": "Lafayette, LA",
         "points": [
+          { "text": "Introduced containerization workflow with docker and wsl" },
           { "text": "Introduced automated UI and API testing using Cypress.io" },
           {
             "text": "Heavy improvements to powershell, google app suite scripts (with npm clasp) and documentation practices"
@@ -136,7 +138,7 @@
             "text": "Created interface for interacting/managing over 100 projects using just command runner, bash, and webscraper.io"
           },
           {
-            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, Octopus Deploy, Teamcity, SSIS, and SSRS"
+            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservies, aws, Octopus Deploy, and Teamcity"
           }
         ]
       },
