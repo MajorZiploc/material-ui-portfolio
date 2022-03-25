@@ -364,6 +364,24 @@
           }
         ],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
+      },
+      {
+        "title": "django-react",
+        "description": "A microservice based website template using django and react",
+        "mainLanguage": "python",
+        "codeLink": "https://github.com/MajorZiploc/django-react",
+        "notableTooling": [
+          {
+            "tool": "docker"
+          },
+          {
+            "tool": "django"
+          },
+          {
+            "tool": "react"
+          }
+        ],
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       }
     ]
   },

@@ -18,10 +18,12 @@ import powershellIconBlue from '../images/powershell_icon_blue.png';
 import shellIconDarkTransparent from '../images/shell_icon_dark_transparent.png';
 import pythonIconLight from '../images/python_icon_light.webp';
 import devIconDarkTransparent from '../images/developer_icon_dark_transparent.jpeg';
+import djangoReactLight from '../images/django-react-light.png';
 
 const getImage = project =>
   // prettier-ignore
-  project.mainLanguage.match(/(f#|fsharp)/i) ? fsharpIconDark
+  project.notableTooling.some(t => t.tool.match(/django/i)) && project.notableTooling.some(t => t.tool.match(/react/i)) ? djangoReactLight
+  : project.mainLanguage.match(/(f#|fsharp)/i) ? fsharpIconDark
   : project.mainLanguage.match(/(\bts\b|typescript)/i) ? typescriptIconBlue
   : project.mainLanguage.match(/(\bjs\b|javascript)/i) ? javascriptIconYellow
   : project.mainLanguage.match(/(\bps\b|powershell)/i) ? powershellIconBlue
