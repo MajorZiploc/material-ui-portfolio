@@ -58,7 +58,7 @@ const OpenSourceProjects = () => {
     })();
   });
 
-  const getTitle = project => project.title || project.codeLink.replace(/\/$/, '').match(/.*\/(.*)?/)[1]
+  const getTitle = project => project.title || project.codeLink.replace(/\/$/, '').match(/.*\/(.*)?/)[1];
 
   return resumeData ? (
     <Box component='div' className={classes.mainContainer}>

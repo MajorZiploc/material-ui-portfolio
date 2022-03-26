@@ -113,10 +113,14 @@ const Navbar = () => {
       )}
       <Divider />
       <br />
-      <Link to="/resume.pdf" target="_blank" className={`${classes.downloadResumeLink}`} download>DOWNLOAD RESUME AS PDF</Link>
+      <Link to='/resume.pdf' target='_blank' className={`${classes.downloadResumeLink}`} download>
+        DOWNLOAD RESUME AS PDF
+      </Link>
       <br />
       <br />
-      <Link to="/resume_data.json" target="_blank" className={`${classes.downloadResumeLink}`} download>DOWNLOAD RESUME AS JSON</Link>
+      <Link to='/resume_data.json' target='_blank' className={`${classes.downloadResumeLink}`} download>
+        DOWNLOAD RESUME AS JSON
+      </Link>
       <Divider />
     </Box>
   );
