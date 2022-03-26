@@ -58,6 +58,8 @@ const OpenSourceProjects = () => {
     })();
   });
 
+  const getTitle = project => project.title || project.codeLink.replace(/\/$/, '').match(/.*\/(.*)?/)[1]
+
   return resumeData ? (
     <Box component='div' className={classes.mainContainer}>
       <Typography variant='h4' align='center' className={classes.heading}>
@@ -68,10 +70,10 @@ const OpenSourceProjects = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea href={project.codeLink}>
-                <CardMedia component='img' alt={project.title} height='300' image={getImage(project)} />
+                <CardMedia component='img' alt={getTitle(project)} height='300' image={getImage(project)} />
                 <CardContent>
                   <Typography variant='h5' gutterBottom>
-                    {project.title}
+                    {getTitle(project)}
                   </Typography>
                   <Typography variant='body2' color='textSecondary'>
                     {project.description}
