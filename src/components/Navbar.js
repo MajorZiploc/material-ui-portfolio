@@ -118,7 +118,7 @@ const Navbar = () => {
       </Link>
       <br />
       <br />
-      <Link to='/resume_data.json' target='_blank' className={`${classes.downloadResumeLink}`} download>
+      <Link to='/resume.json' target='_blank' className={`${classes.downloadResumeLink}`} download>
         DOWNLOAD RESUME AS JSON
       </Link>
       <Divider />
