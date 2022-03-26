@@ -243,7 +243,6 @@
     "sectionHeader": "Open Source Projects",
     "items": [
       {
-        "title": "json-test-utility",
         "description": "A wrapper over lodash to help test api's and much more",
         "mainLanguage": "typescript",
         "availableOn": "npm",
@@ -257,7 +256,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "powershell_scaffolder",
         "description": "A module to create new powershell modules",
 
         "mainLanguage": "powershell",
@@ -272,7 +270,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "FSharpPlus",
         "description": "Added Nullable module and operators that operator under context",
         "mainLanguage": "F#",
         "availableOn": "nuget",
@@ -282,7 +279,6 @@
         "roles": [{ "role": "minor contributor" }]
       },
       {
-        "title": "Acadian.FSharp",
         "description": "Added various helpers for Result, Option, Async and other utility functions",
         "mainLanguage": "F#",
         "availableOn": "nuget",
@@ -292,7 +288,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "Acadian.Dapper.Fs",
         "description": "A F# wrapper for C#'s Dapper to convert Nullable data to the Option type",
         "mainLanguage": "F#",
         "availableOn": "nuget",
@@ -302,7 +297,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "Acadian.Json.Fs",
         "description": "A F# wrapper for dealing with null and option conversions related to json and F# models",
         "mainLanguage": "F#",
         "availableOn": "nuget",
@@ -312,7 +306,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "home-settings",
         "description": "A cross platform developer machine harness for vim, nvim, zsh, bash, vscode, and tmux",
         "mainLanguage": "shell",
         "codeLink": "https://github.com/MajorZiploc/home-settings",
@@ -327,7 +320,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "web_scraper_io_scripts",
         "description": "A web scrapping harness that makes use of webscraper.io",
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/web_scraper_io_scripts",
@@ -339,7 +331,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "google.app.suite.scripts",
         "description": "A way to manage multiple google scripts with standard coding tools",
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/google.app.suite.scripts",
@@ -351,7 +342,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "pandas_data_analytics",
         "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
         "mainLanguage": "python",
         "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
@@ -366,7 +356,6 @@
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
-        "title": "django-react",
         "description": "A microservice based website template using django and react",
         "mainLanguage": "python",
         "codeLink": "https://github.com/MajorZiploc/django-react",
