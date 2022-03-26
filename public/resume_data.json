@@ -77,39 +77,16 @@
       {
         "title": "Tooling",
         "tools": [
-          {
-            "tool": "neovim"
-          },
-          {
-            "tool": "vscode"
-          },
-          {
-            "tool": "zsh"
-          },
-          {
-            "tool": "tmux"
-          },
-          {
-            "tool": "visual studio"
-          }
+          { "tool": "neovim" },
+          { "tool": "vscode" },
+          { "tool": "zsh" },
+          { "tool": "tmux" },
+          { "tool": "visual studio" }
         ]
       },
       {
         "title": "Operating Systems",
-        "tools": [
-          {
-            "tool": "mac"
-          },
-          {
-            "tool": "ubuntu"
-          },
-          {
-            "tool": "wsl ubuntu"
-          },
-          {
-            "tool": "windows"
-          }
-        ]
+        "tools": [{ "tool": "mac" }, { "tool": "ubuntu" }, { "tool": "wsl ubuntu" }, { "tool": "windows" }]
       }
     ]
   },
@@ -262,11 +239,7 @@
         "availableOn": "psgallery",
         "link": "https://www.powershellgallery.com/packages/powershell_scaffolder",
         "codeLink": "https://github.com/MajorZiploc/powershell_scaffolder",
-        "notableTooling": [
-          {
-            "tool": "github actions"
-          }
-        ],
+        "notableTooling": [{ "tool": "github actions" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
@@ -309,67 +282,35 @@
         "description": "A cross platform developer machine harness for vim, nvim, zsh, bash, vscode, and tmux",
         "mainLanguage": "shell",
         "codeLink": "https://github.com/MajorZiploc/home-settings",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          },
-          {
-            "tool": "bats"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }, { "tool": "bats" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "A web scrapping harness that makes use of webscraper.io",
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/web_scraper_io_scripts",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "A way to manage multiple google scripts with standard coding tools",
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/google.app.suite.scripts",
-        "notableTooling": [
-          {
-            "tool": "clasp"
-          }
-        ],
+        "notableTooling": [{ "tool": "clasp" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
         "mainLanguage": "python",
         "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          },
-          {
-            "tool": "pandas"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }, { "tool": "pandas" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "A microservice based website template using django and react",
         "mainLanguage": "python",
         "codeLink": "https://github.com/MajorZiploc/django-react",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          },
-          {
-            "tool": "django"
-          },
-          {
-            "tool": "react"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }, { "tool": "django" }, { "tool": "react" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       }
     ]
