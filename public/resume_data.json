@@ -221,6 +221,20 @@
     "sectionHeader": "Open Source Projects",
     "items": [
       {
+        "description": "A microservice based website template using django and react",
+        "mainLanguage": "python",
+        "codeLink": "https://github.com/MajorZiploc/django-react",
+        "notableTooling": [{ "tool": "docker" }, { "tool": "django" }, { "tool": "react" }],
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
+      },
+      {
+        "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
+        "mainLanguage": "python",
+        "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
+        "notableTooling": [{ "tool": "docker" }, { "tool": "pandas" }],
+        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
+      },
+      {
         "description": "A wrapper over lodash to help test api's and much more",
         "mainLanguage": "typescript",
         "availableOn": "npm",
@@ -298,20 +312,6 @@
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/google.app.suite.scripts",
         "notableTooling": [{ "tool": "clasp" }],
-        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
-      },
-      {
-        "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
-        "mainLanguage": "python",
-        "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
-        "notableTooling": [{ "tool": "docker" }, { "tool": "pandas" }],
-        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
-      },
-      {
-        "description": "A microservice based website template using django and react",
-        "mainLanguage": "python",
-        "codeLink": "https://github.com/MajorZiploc/django-react",
-        "notableTooling": [{ "tool": "docker" }, { "tool": "django" }, { "tool": "react" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       }
     ]
