@@ -27,7 +27,7 @@
     "items": [
       {
         "title": "Frontend",
-        "tools": [{ "tool": "React" }, { "tool": "asp.net mvc" }, { "tool": "winforms" }]
+        "tools": [{ "tool": "react" }, { "tool": "asp.net mvc" }, { "tool": "winforms" }]
       },
       {
         "title": "Backend",
@@ -77,39 +77,16 @@
       {
         "title": "Tooling",
         "tools": [
-          {
-            "tool": "neovim"
-          },
-          {
-            "tool": "vscode"
-          },
-          {
-            "tool": "zsh"
-          },
-          {
-            "tool": "tmux"
-          },
-          {
-            "tool": "visual studio"
-          }
+          { "tool": "neovim" },
+          { "tool": "vscode" },
+          { "tool": "zsh" },
+          { "tool": "tmux" },
+          { "tool": "visual studio" }
         ]
       },
       {
         "title": "Operating Systems",
-        "tools": [
-          {
-            "tool": "mac"
-          },
-          {
-            "tool": "ubuntu"
-          },
-          {
-            "tool": "wsl ubuntu"
-          },
-          {
-            "tool": "windows"
-          }
-        ]
+        "tools": [{ "tool": "mac" }, { "tool": "ubuntu" }, { "tool": "wsl ubuntu" }, { "tool": "windows" }]
       }
     ]
   },
@@ -129,6 +106,7 @@
         "company": "Acadian Ambulance",
         "location": "Lafayette, LA",
         "points": [
+          { "text": "Lead development of an ambulance scheduling system" },
           { "text": "Introduced containerization workflow with docker and wsl" },
           { "text": "Introduced automated UI and API testing using Cypress.io" },
           {
@@ -138,28 +116,28 @@
             "text": "Created interface for interacting/managing over 100 projects using just command runner, bash, and webscraper.io"
           },
           {
-            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservies, aws, Octopus Deploy, and Teamcity"
+            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservices, aws, Octopus Deploy, and Teamcity"
           }
         ]
       },
       {
-        "title": "Freelance Software Developer",
+        "title": "Freelance Software Developer (As Needed)",
         "timeDedicated": "Part time",
-        "teamSize": "3-6",
+        "teamSize": "3-5",
         "workDateRanges": [
           {
             "beginDate": "06/01/2021",
-            "endDate": "08/01/2021"
+            "endDate": "Present"
           }
         ],
         "company": "Cythereal",
         "location": "Lafayette, LA",
         "points": [
           {
-            "text": "Introduced documentation of projects, cicd pipelines, and other processes to remove knowledge silos"
+            "text": "Undertake greenfield development and research to scout new projects"
           },
           {
-            "text": "Utilized tools like: python, django, docker, mongodb, react, nodejs, vim, bash, azure, ansible, terraform, packer, and just"
+            "text": "Utilized tools like: django, react, docker, mongodb, vim, bash, azure, ansible, terraform, packer, and just"
           }
         ]
       },
@@ -262,11 +240,7 @@
         "availableOn": "psgallery",
         "link": "https://www.powershellgallery.com/packages/powershell_scaffolder",
         "codeLink": "https://github.com/MajorZiploc/powershell_scaffolder",
-        "notableTooling": [
-          {
-            "tool": "github actions"
-          }
-        ],
+        "notableTooling": [{ "tool": "github actions" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
@@ -309,67 +283,35 @@
         "description": "A cross platform developer machine harness for vim, nvim, zsh, bash, vscode, and tmux",
         "mainLanguage": "shell",
         "codeLink": "https://github.com/MajorZiploc/home-settings",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          },
-          {
-            "tool": "bats"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }, { "tool": "bats" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "A web scrapping harness that makes use of webscraper.io",
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/web_scraper_io_scripts",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "A way to manage multiple google scripts with standard coding tools",
         "mainLanguage": "javascript",
         "codeLink": "https://github.com/MajorZiploc/google.app.suite.scripts",
-        "notableTooling": [
-          {
-            "tool": "clasp"
-          }
-        ],
+        "notableTooling": [{ "tool": "clasp" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "An area for exploratory data science; to clean, analyze, and visualize data.",
         "mainLanguage": "python",
         "codeLink": "https://github.com/MajorZiploc/pandas_data_analytics",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          },
-          {
-            "tool": "pandas"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }, { "tool": "pandas" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       },
       {
         "description": "A microservice based website template using django and react",
         "mainLanguage": "python",
         "codeLink": "https://github.com/MajorZiploc/django-react",
-        "notableTooling": [
-          {
-            "tool": "docker"
-          },
-          {
-            "tool": "django"
-          },
-          {
-            "tool": "react"
-          }
-        ],
+        "notableTooling": [{ "tool": "docker" }, { "tool": "django" }, { "tool": "react" }],
         "roles": [{ "role": "owner" }, { "role": "major contributor" }]
       }
     ]
