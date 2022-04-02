@@ -27,7 +27,7 @@
     "items": [
       {
         "title": "Frontend",
-        "tools": [{ "tool": "React" }, { "tool": "asp.net mvc" }, { "tool": "winforms" }]
+        "tools": [{ "tool": "react" }, { "tool": "asp.net mvc" }, { "tool": "winforms" }]
       },
       {
         "title": "Backend",
@@ -106,6 +106,7 @@
         "company": "Acadian Ambulance",
         "location": "Lafayette, LA",
         "points": [
+          { "text": "Lead development of an ambulance scheduling system" },
           { "text": "Introduced containerization workflow with docker and wsl" },
           { "text": "Introduced automated UI and API testing using Cypress.io" },
           {
@@ -115,28 +116,28 @@
             "text": "Created interface for interacting/managing over 100 projects using just command runner, bash, and webscraper.io"
           },
           {
-            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservies, aws, Octopus Deploy, and Teamcity"
+            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservices, aws, Octopus Deploy, and Teamcity"
           }
         ]
       },
       {
-        "title": "Freelance Software Developer",
+        "title": "Freelance Software Developer (As Needed)",
         "timeDedicated": "Part time",
-        "teamSize": "3-6",
+        "teamSize": "3-5",
         "workDateRanges": [
           {
             "beginDate": "06/01/2021",
-            "endDate": "08/01/2021"
+            "endDate": "Present"
           }
         ],
         "company": "Cythereal",
         "location": "Lafayette, LA",
         "points": [
           {
-            "text": "Introduced documentation of projects, cicd pipelines, and other processes to remove knowledge silos"
+            "text": "Undertake greenfield development and research to scout new projects"
           },
           {
-            "text": "Utilized tools like: python, django, docker, mongodb, react, nodejs, vim, bash, azure, ansible, terraform, packer, and just"
+            "text": "Utilized tools like: django, react, docker, mongodb, vim, bash, azure, ansible, terraform, packer, and just"
           }
         ]
       },
