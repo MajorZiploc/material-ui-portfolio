@@ -97,6 +97,7 @@
         "title": "Software Developer/Technical Lead",
         "timeDedicated": "Full time",
         "teamSize": "4-10",
+        "workLocation": "Mostly Remote",
         "workDateRanges": [
           {
             "beginDate": "03/01/2020",
@@ -124,6 +125,7 @@
         "title": "Freelance Software Developer (As Needed)",
         "timeDedicated": "Part time",
         "teamSize": "3-5",
+        "workLocation": "Remote",
         "workDateRanges": [
           {
             "beginDate": "06/01/2021",
@@ -145,6 +147,7 @@
         "title": "Quality Engineer/Consultant",
         "timeDedicated": "Full time",
         "teamSize": "20-25",
+        "workLocation": "Hybrid",
         "workDateRanges": [
           {
             "beginDate": "02/01/2019",
@@ -163,6 +166,7 @@
       {
         "title": "Undergraduate Programming Languages Research Assistant",
         "timeDedicated": "Part time",
+        "workLocation": "Hybrid",
         "workDateRanges": [
           {
             "beginDate": "05/01/2018",
@@ -176,6 +180,7 @@
         "title": "Software Developer Intern",
         "timeDedicated": "Part time",
         "teamSize": "4-6",
+        "workLocation": "Hybrid",
         "workDateRanges": [
           {
             "beginDate": "01/01/2017",
@@ -195,6 +200,7 @@
         "title": "Sales Associate",
         "timeDedicated": "Part time",
         "teamSize": "4-8",
+        "workLocation": "In Office",
         "workDateRanges": [
           {
             "beginDate": "07/01/2011",
