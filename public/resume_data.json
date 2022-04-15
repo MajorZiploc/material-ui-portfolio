@@ -158,9 +158,9 @@
         "location": "Lafayette, LA",
         "points": [
           {
-            "text": "Wrote automated UI and API test suites a health insurance website"
+            "text": "Wrote automated UI and API test suites a health insurance website", "shouldExclude": false
           },
-          { "text": "Utilized tools like: typescript, protractor, postgresql, mongodb, docker, vscode, and bash" }
+          { "text": "Utilized tools like: typescript, protractor, postgresql, mongodb, docker, vscode, and bash", "shouldExclude": false }
         ]
       },
       {
@@ -174,7 +174,13 @@
           }
         ],
         "company": "University Of Louisiana",
-        "location": "Lafayette, LA"
+        "location": "Lafayette, LA",
+        "points": [
+          {
+            "text": "Read research papers and books on programming language design and type theory", "shouldExclude": true
+          },
+          { "text": "Taught supplemental sessions for a programming languages course", "shouldExclude": true }
+        ]
       },
       {
         "title": "Software Developer Intern",
