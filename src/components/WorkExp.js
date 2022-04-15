@@ -142,7 +142,8 @@ const WorkExpEntry = ({ job }) => {
           ))}
         <Typography variant='subtitle2' align='center' className={classes.subtitle2}>
           {job.timeDedicated}
-          {job.workLocation ? ` - ${job.workLocation}` : '' } {job.teamSize ? ` - Team size of ${job.teamSize}` : ''} - {job.location}
+          {job.workLocation ? ` - ${job.workLocation}` : ''} {job.teamSize ? ` - Team size of ${job.teamSize}` : ''} -{' '}
+          {job.location}
         </Typography>
       </Box>
     </React.Fragment>
