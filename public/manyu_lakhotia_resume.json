@@ -151,7 +151,7 @@
         "location": "Lafayette, LA",
         "points": [
           {
-            "text": "Undertake greenfield development and research to scout new projects"
+            "text": "Undertook greenfield development and research to scout new projects"
           },
           {
             "text": "Utilized tools like: django, react, docker, mongodb, vim, bash, azure, ansible, terraform, packer, and just"
@@ -244,10 +244,10 @@
         "location": "Lafayette, LA",
         "points": [
           {
-            "text": "Write MSAccess 95 sql queries to fill in missing gaps of POS software. Ex: Analyze customer purchases"
+            "text": "Wrote MSAccess 95 sql queries to fill in missing gaps of POS software. Ex: Analyze customer purchases"
           },
-          { "text": "Write webscraper.io/pandas scripts to scrape/analyze/manage our online Reverb.com item listings" },
-          { "text": "Write powershell and google app suite scripts for various miscellaneous tasks" }
+          { "text": "Wrote webscraper.io/pandas scripts to scrape/analyze/manage our online Reverb.com item listings" },
+          { "text": "Wrote powershell and google app suite scripts for various miscellaneous tasks" }
         ]
       }
     ]
