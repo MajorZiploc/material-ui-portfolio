@@ -94,6 +94,21 @@
     "sectionHeader": "Experience",
     "jobs": [
       {
+        "title": "Software Engineer",
+        "timeDedicated": "Full time",
+        "teamSize": "4-8",
+        "workLocation": "Remote",
+        "workDateRanges": [
+          {
+            "beginDate": "05/04/2022",
+            "endDate": "Present"
+          }
+        ],
+        "company": "Conservis",
+        "location": "Minneapolis, MN",
+        "points": []
+      },
+      {
         "title": "Software Developer/Technical Lead",
         "timeDedicated": "Full time",
         "teamSize": "4-10",
@@ -101,7 +116,7 @@
         "workDateRanges": [
           {
             "beginDate": "03/01/2020",
-            "endDate": "Present"
+            "endDate": "04/29/2022"
           }
         ],
         "company": "Acadian Ambulance",
@@ -111,13 +126,13 @@
           { "text": "Introduced containerization workflow with docker and wsl" },
           { "text": "Introduced automated UI and API testing using Cypress.io" },
           {
-            "text": "Heavy improvements to powershell, google app suite scripts (with npm clasp) and documentation practices"
+            "text": "Improved powershell, google app suite scripts (with npm clasp) and documentation practices"
           },
           {
             "text": "Created interface for interacting/managing over 100 projects using just command runner, bash, and webscraper.io"
           },
           {
-            "text": "Utilize tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservices, aws, Octopus Deploy, and Teamcity"
+            "text": "Utilized tools like: F#, C#, react, wsl, mssql, just, vim, bash, microservices, aws, Octopus Deploy, and Teamcity"
           }
         ]
       },
@@ -129,7 +144,7 @@
         "workDateRanges": [
           {
             "beginDate": "06/01/2021",
-            "endDate": "Present"
+            "endDate": "04/30/2022"
           }
         ],
         "company": "Cythereal",
@@ -163,7 +178,7 @@
           },
           {
             "text": "Utilized tools like: typescript, protractor, postgresql, mongodb, docker, vscode, and bash",
-            "shouldExclude": false
+            "shouldExclude": true
           }
         ]
       },
@@ -201,7 +216,10 @@
         "company": "Wetlands Research Center",
         "location": "Lafayette, LA",
         "points": [
-          { "text": "Developed a website using asp.net mvc for network monitoring" },
+          {
+            "text": "Developed a website using asp.net mvc for network monitoring",
+            "shouldExclude": true
+          },
           {
             "text": "Developed a stand alone executable project using java swing for analyzing water levels from large NetCDF files"
           }
@@ -219,7 +237,7 @@
           },
           {
             "beginDate": "03/01/2020",
-            "endDate": "Present"
+            "endDate": "04/23/2022"
           }
         ],
         "company": "C & M Music Center",
@@ -290,7 +308,7 @@
         "link": "https://www.nuget.org/packages/Acadian.FSharp/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.FSharp",
         "notableTooling": [{ "tool": "fake (fsharp make file)" }],
-        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
+        "roles": [{ "role": "major contributor" }]
       },
       {
         "description": "A F# wrapper for C#'s Dapper to convert Nullable data to the Option type",
@@ -299,7 +317,7 @@
         "link": "https://www.nuget.org/packages/Acadian.Dapper.Fs/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.Dapper.Fs",
         "notableTooling": [{ "tool": "fake (fsharp make file)" }],
-        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
+        "roles": [{ "role": "major contributor" }]
       },
       {
         "description": "A F# wrapper for dealing with null and option conversions related to json and F# models",
@@ -308,7 +326,7 @@
         "link": "https://www.nuget.org/packages/Acadian.Json.Fs/",
         "codeLink": "https://github.com/Acadian-Ambulance/Acadian.Json.Fs",
         "notableTooling": [{ "tool": "fake (fsharp make file)" }],
-        "roles": [{ "role": "owner" }, { "role": "major contributor" }]
+        "roles": [{ "role": "major contributor" }]
       },
       {
         "description": "A cross platform developer machine harness for vim, nvim, zsh, bash, vscode, and tmux",
