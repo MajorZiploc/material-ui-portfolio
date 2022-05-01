@@ -70,7 +70,7 @@ const useStyles = makeStyles(theme => ({
   },
   timeLineYear: {
     'textAlign': 'center',
-    'maxWidth': '15.375rem',
+    'maxWidth': '23.375rem',
     'margin': '0 3rem 0 auto',
     'fontSize': '1.8rem',
     'color': '#fff',
@@ -114,10 +114,16 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function getDateRangeFormated(dateRange) {
-  const beginYear = new Date(dateRange.beginDate).getFullYear();
-  var endYear = new Date(dateRange.endDate)?.getFullYear() ?? dateRange.endDate;
-  endYear = isNaN(endYear) ? dateRange.endDate : endYear;
-  return [beginYear === endYear, !endYear].some(b => b) ? beginYear : `${beginYear} - ${endYear}`;
+  const begin = new Date(dateRange.beginDate);
+  const end = new Date(dateRange.endDate);
+  const getTimeStamp = date => `${date.toLocaleString('en-US', { month: 'short' })} ${date.getFullYear()}`;
+  const beginDate = getTimeStamp(begin);
+  const endDate = isNaN(end?.getFullYear())
+    ? dateRange.endDate
+    : end?.getFullYear() && end?.getMonth()
+    ? getTimeStamp(end)
+    : dateRange.endDate;
+  return [beginDate === endDate, !endDate].some(b => b) ? beginDate : `${beginDate} - ${endDate}`;
 }
 
 const WorkExpEntry = ({ job }) => {
