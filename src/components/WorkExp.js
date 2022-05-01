@@ -118,10 +118,10 @@ function getDateRangeFormated(dateRange) {
   const end = new Date(dateRange.endDate);
   const getTimeStamp = date => `${date.toLocaleString('en-US', { month: 'short' })} ${date.getFullYear()}`;
   const beginDate = getTimeStamp(begin);
-  const endDate = isNaN(end?.getFullYear())
-    ? dateRange.endDate
-    : end?.getFullYear() && end?.getMonth()
-    ? getTimeStamp(end)
+  // prettier-ignore
+  const endDate =
+    isNaN(end?.getFullYear()) ? dateRange.endDate
+    : end?.getFullYear() && end?.getMonth() ? getTimeStamp(end)
     : dateRange.endDate;
   return [beginDate === endDate, !endDate].some(b => b) ? beginDate : `${beginDate} - ${endDate}`;
 }
