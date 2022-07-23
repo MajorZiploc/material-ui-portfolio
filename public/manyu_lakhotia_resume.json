@@ -6,6 +6,7 @@
     "phoneNumber": "+1(337)322-4192",
     "email": "LakeMonYew@gmail.com",
     "portfolio": "https://portfolio.majorziploc.com",
+    "portfolioRepo": "https://www.github.com/MajorZiploc/material-ui-portfolio",
     "linkedIn": "https://www.linkedin.com/in/majorziploc/",
     "github": "https://github.com/MajorZiploc",
     "codeWars": "https://www.codewars.com/users/Major_Ziploc"
@@ -127,9 +128,7 @@
         "location": "Lafayette, LA",
         "points": [
           { "text": "Led development of an ambulance scheduling system" },
-          { "text": "Introduced containerization workflow with docker and wsl",
-            "shouldExclude": true
-          },
+          { "text": "Introduced containerization workflow with docker and wsl", "shouldExclude": true },
           { "text": "Introduced automated UI and API testing using Cypress.io" },
           {
             "text": "Improved powershell, google app suite scripts (with npm clasp) and documentation practices"

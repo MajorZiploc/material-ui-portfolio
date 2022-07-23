@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   codeWars: {
     color: 'tan',
   },
-  downloadResumeLink: {
+  generalLink: {
     color: 'tan',
     marginLeft: 15,
   },
@@ -84,7 +84,7 @@ const Navbar = () => {
 
   const classes = useStyles();
 
-  const sideList = () => (
+  const sideList = resumeData => (
     <Box className={classes.menuSliderContainer} component='div'>
       <Avatar className={classes.avatar} src={avatar} alt='Manyu Lakhotia' />
       <Divider />
@@ -113,15 +113,19 @@ const Navbar = () => {
       )}
       <Divider />
       <br />
-      <Link to='/manyu_lakhotia_resume.pdf' target='_blank' className={`${classes.downloadResumeLink}`} download>
+      <Link to='/manyu_lakhotia_resume.pdf' target='_blank' className={`${classes.generalLink}`} download>
         DOWNLOAD RESUME AS PDF
       </Link>
       <br />
       <br />
-      <Link to='/manyu_lakhotia_resume.json' target='_blank' className={`${classes.downloadResumeLink}`} download>
+      <Link to='/manyu_lakhotia_resume.json' target='_blank' className={`${classes.generalLink}`} download>
         DOWNLOAD RESUME AS JSON
       </Link>
       <Divider />
+      <br />
+      <a href={resumeData.header.portfolioRepo} target='_blank' className={`${classes.generalLink}`}>
+        THIS WEBSITES CODE!
+      </a>
     </Box>
   );
 
@@ -139,10 +143,12 @@ const Navbar = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor='left' onClose={() => setOpen(false)}>
-        {sideList()}
-        <Footer />
-      </Drawer>
+      {resumeData && (
+        <Drawer open={open} anchor='left' onClose={() => setOpen(false)}>
+          {sideList(resumeData)}
+          <Footer />
+        </Drawer>
+      )}
     </React.Fragment>
   );
 };
