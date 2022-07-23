@@ -17,6 +17,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from '@material-ui/icons/AssignmentInd';
 import Home from '@material-ui/icons/Home';
 import Apps from '@material-ui/icons/Apps';
+import Brush from '@material-ui/icons/Brush';
 import Build from '@material-ui/icons/Build';
 // import ContactMail from '@material-ui/icons/ContactMail';
 import { makeStyles } from '@material-ui/core/styles';
@@ -68,6 +69,7 @@ const menuItems = [
   { listIcon: <AssignmentInd />, listText: 'Work Experience', listPath: '/workexp' },
   { listIcon: <Apps />, listText: 'Open Source Projects', listPath: '/opensource' },
   { listIcon: <Build />, listText: 'Technical Summary', listPath: '/techsummary' },
+  { listIcon: <Brush />, listText: 'About Me', listPath: '/aboutme' },
   // { listIcon: <ContactMail />, listText: 'Contact', listPath: '/contact' },
 ];
 

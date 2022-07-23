@@ -5,6 +5,7 @@ import Home from './components';
 import WorkExp from './components/WorkExp';
 import Navbar from './components/Navbar';
 import OpenSourceProjects from './components/OpenSourceProjects';
+import AboutMe from './components/AboutMe';
 import TechnicalSummary from './components/TechnicalSummary';
 // import Contact from './components/Contact';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -76,6 +77,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/workexp' element={<WorkExp />} />
             <Route path='/opensource' element={<OpenSourceProjects />} />
+            <Route path='/aboutme' element={<AboutMe />} />
             <Route path='/techsummary' element={<TechnicalSummary />} />
             {/*<Route path='/contact' element={<Contact />} />*/}
           </Routes>

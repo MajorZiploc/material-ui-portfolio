@@ -3,32 +3,32 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import DataContext from '../context/DataContext';
 
-import frontEndBrushLight from '../images/front_end_brush_light.png';
-import backEndCogLight from '../images/back_end_cog_light.png';
-import testingCogClipboardLight from '../images/testing_cog_clipboard_light.png';
-import headlessPumpkinLight from '../images/headless_pumpkin_light.png';
-import codeBoxLight from '../images/code_box_light.png';
-import devOpsCogsLight from '../images/devops_cogs_light.png';
-import computerHammerWrenchLight from '../images/computer_hammer_wrench_light.png';
-import operatingSystemsLight from '../images/operating_systems_light.png';
-
 import devIconDarkTransparent from '../images/developer_icon_dark_transparent.jpeg';
 
-const getImage = item =>
+import sketchingTransparent from '../images/sketching_transparent.png';
+import runningTransparent from '../images/running_transparent.png';
+import workingOutTransparent from '../images/working_out_transparent.png';
+import guitarDark from '../images/guitar_dark.png';
+import nutritionTransparent from '../images/nutrition_transparent.png';
+import slackliningTransparent from '../images/slacklining_transparent.webp';
+import skateboardingTransparent from '../images/skateboarding_transparent.webp';
+
+const getImage = hobby =>
   // prettier-ignore
-  item.title.match(/(Frontend)/i) ? frontEndBrushLight
-  : item.title.match(/(Backend)/i) ? backEndCogLight
-  : item.title.match(/(Testing)/i) ? testingCogClipboardLight
-  : item.title.match(/(Headless)/i) ? headlessPumpkinLight
-  : item.title.match(/(DevOps)/i) ? devOpsCogsLight
-  : item.title.match(/(Languages)/i) ? codeBoxLight
-  : item.title.match(/(Operating Systems)/i) ? operatingSystemsLight
-  : item.title.match(/(Tooling)/i) ? computerHammerWrenchLight
+  hobby.title.match(/(sketch)/i) ? sketchingTransparent
+  : hobby.title.match(/(running)/i) ? runningTransparent
+  : hobby.title.match(/(working out)/i) ? workingOutTransparent
+  : hobby.title.match(/(guitar)/i) ? guitarDark
+  : hobby.title.match(/(nutrition)/i) ? nutritionTransparent
+  : hobby.title.match(/(slack)/i) ? slackliningTransparent
+  : hobby.title.match(/(skate)/i) ? skateboardingTransparent
   : devIconDarkTransparent;
 
 const useStyles = makeStyles(_theme => ({
@@ -47,7 +47,7 @@ const useStyles = makeStyles(_theme => ({
   },
 }));
 
-const TechnicalSummary = () => {
+const AboutMe = () => {
   const classes = useStyles();
   const data = React.useContext(DataContext);
   const [resumeData, setResumeData] = React.useState();
@@ -58,24 +58,34 @@ const TechnicalSummary = () => {
     })();
   });
 
+  const getTitle = hobby => hobby.title;
+  const getLinkText = hobby => hobby.content.text || 'More';
+
   return resumeData ? (
     <Box component='div' className={classes.mainContainer}>
       <Typography variant='h4' align='center' className={classes.heading}>
-        Technical Summary
+        {resumeData.aboutMe.hobbies.sectionHeader}
       </Typography>
       <Grid container justify='center'>
-        {resumeData.technicalSkills.items.map((item, i) => (
+        {resumeData.aboutMe.hobbies.items.map((hobby, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
-              <CardMedia component='img' alt={item.title} height='300' image={getImage(item)} />
+              <CardMedia component='img' alt={getTitle(hobby)} height='300' image={getImage(hobby)} />
               <CardContent>
                 <Typography variant='h5' gutterBottom>
-                  {item.title}
+                  {getTitle(hobby)}
                 </Typography>
                 <Typography variant='body2' color='textSecondary'>
-                  {item.tools.map(t => t.tool).join(', ')}
+                  {hobby.description}
                 </Typography>
               </CardContent>
+              {hobby.content?.link && (
+                <CardActions>
+                  <Button size='small' color='primary' href={hobby.content.link}>
+                    {getLinkText(hobby)}
+                  </Button>
+                </CardActions>
+              )}
             </Card>
           </Grid>
         ))}
@@ -86,4 +96,4 @@ const TechnicalSummary = () => {
   );
 };
 
-export default TechnicalSummary;
+export default AboutMe;

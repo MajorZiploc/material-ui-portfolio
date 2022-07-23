@@ -382,12 +382,10 @@
         {
           "title": "Sketching",
           "description": "At 29, I pick up sketching inspired by my love for manga and anime. One day I hope to write my own manga based another my late mothers life",
-          "links": [
-            {
-              "text": "Check out my sketches",
-              "link": "https://www.deviantart.com/majorziploc"
-            }
-          ]
+          "content": {
+            "text": "Check out my sketches",
+            "link": "https://www.deviantart.com/majorziploc/gallery/all"
+          }
         },
         {
           "title": "Running",
