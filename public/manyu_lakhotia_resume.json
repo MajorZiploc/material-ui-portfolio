@@ -106,7 +106,11 @@
         ],
         "company": "Conservis",
         "location": "Minneapolis, MN",
-        "points": []
+        "points": [
+          {
+            "text": "Utilize tools like: react redux, postgresql, django, celery, rabbitmq, docker, vim, bash, microservices, and aws"
+          }
+        ]
       },
       {
         "title": "Software Developer/Technical Lead",
@@ -123,7 +127,9 @@
         "location": "Lafayette, LA",
         "points": [
           { "text": "Led development of an ambulance scheduling system" },
-          { "text": "Introduced containerization workflow with docker and wsl" },
+          { "text": "Introduced containerization workflow with docker and wsl",
+            "shouldExclude": true
+          },
           { "text": "Introduced automated UI and API testing using Cypress.io" },
           {
             "text": "Improved powershell, google app suite scripts (with npm clasp) and documentation practices"
