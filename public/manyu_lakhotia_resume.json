@@ -374,5 +374,46 @@
         "endDate": "2015"
       }
     ]
+  },
+  "aboutMe": {
+    "hobbies": {
+      "sectionHeader": "Hobbies",
+      "items": [
+        {
+          "title": "Sketching",
+          "description": "At 29, I pick up sketching inspired by my love for manga and anime. One day I hope to write my own manga based another my late mothers life",
+          "links": [
+            {
+              "text": "Check out my sketches",
+              "link": "https://www.deviantart.com/majorziploc"
+            }
+          ]
+        },
+        {
+          "title": "Running",
+          "description": "At 27, running became a normal part of life inspired by my mother. Entering races is now something I do to honor my late mother"
+        },
+        {
+          "title": "Working Out",
+          "description": "At 20, I became fixated on exercise. I have not stopped since then and am very consistent with it"
+        },
+        {
+          "title": "Guitar",
+          "description": "At 10, my parents gave me the opportunity to learn guitar. Since then, it was always been something I can go to in order to be creative and express myself"
+        },
+        {
+          "title": "Nutrition",
+          "description": "At 27, calorie counting became a regular part of my life. Thinking of food in terms of calories per gram has given me a easy and quick guide to nutrition while still enjoying food"
+        },
+        {
+          "title": "Slack-Lining",
+          "description": "A much more causal hobby of mine that I do when hanging out with friends, on trips, or taking an easy day"
+        },
+        {
+          "title": "Skateboarding (Cruising)",
+          "description": "A fun means of transportation when traveling and doing sight seeing"
+        }
+      ]
+    }
   }
 }
