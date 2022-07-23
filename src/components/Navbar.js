@@ -123,7 +123,7 @@ const Navbar = () => {
       </Link>
       <Divider />
       <br />
-      <a href={resumeData.header.portfolioRepo} target='_blank' className={`${classes.generalLink}`}>
+      <a href={resumeData.header.portfolioRepo} target='_blank' rel='noreferrer' className={`${classes.generalLink}`}>
         THIS WEBSITES CODE!
       </a>
     </Box>
